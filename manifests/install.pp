@@ -17,7 +17,8 @@ class corp104_snmp_exporter::install (
     true    => undef,
     default => $http_proxy,
   }
-   
+  $options = "${corp104_snmp_exporter::scrape_uri} ${corp104_snmp_exporter::extra_options}"
+
   $os_arch = $facts['architecture'] ? {
     'i386'   => '386',
     'x86_64' => 'amd64',
