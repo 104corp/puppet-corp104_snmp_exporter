@@ -2,7 +2,7 @@ class corp104_snmp_exporter::install (
   String    $package_name         = $corp104_snmp_exporter::package_name,
   String    $version              = $corp104_snmp_exporter::version,
   String    $package_ensure       = 'installed',
-  String    $install_method       = 'url',
+  String    $install_method       = $corp104_snmp_exporter::install_method,
   String    $download_url         = $corp104_snmp_exporter::download_url,
   String    $download_extension   = 'tar.gz',
   String    $bin_dir              = $corp104_snmp_exporter::bin_dir,

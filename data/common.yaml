@@ -3,7 +3,7 @@ corp104_snmp_exporter::scrape_uri: 'http://localhost/server-status/?auto'
 corp104_snmp_exporter::package_ensure: 'present'
 corp104_snmp_exporter::package_name: 'snmp_exporter'
 corp104_snmp_exporter::service_ensure: 'running'
-service_name: 'snmp-exporter'
+corp104_snmp_exporter::service_name: 'snmp-exporter'
 corp104_snmp_exporter::service_enable: true
 corp104_snmp_exporter::extra_options: ~
 corp104_snmp_exporter::install_method: 'url'
